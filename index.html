@@ -46,13 +46,12 @@
             font-size: 25px;
             letter-spacing: 2px;
             word-spacing: 2px;
-            color: #fa91fd;
+            color: #c5b801;
             font-weight: 700;
             text-decoration: none;
             font-style: normal;
             font-variant: normal;
             text-transform: none;
-            text-shadow: 0 0 5px #da59af, 0 0 10px #da59af, 0 0 15px #da59af, 0 0 20px #be157d, 0 0 30px #be157d, 0 0 40px #be157d, 0 0 55px #be157d, 0 0 75px #be157d, 2px 2px 2px #be157d;
         }
 
         .parrafo {
@@ -108,31 +107,12 @@
             font-size: 40px;
             letter-spacing: -1px;
             word-spacing: 1.6px;
-            color: #FFE024;
+            color: #c0bd00;
             font-weight: 400;
             text-decoration: none;
             font-style: normal;
             font-variant: normal;
             text-transform: none;
-            text-shadow: 0 0 5px #fad91f, 0 0 10px #fad91f, 0 0 15px #fad91f, 0 0 20px #CE5E00, 0 0 30px #CE5E00, 0 0 40px #CE5E00, 0 0 55px #CE5E00, 0 0 75px #CE5E00, 2px 2px 2px #CE5E00;
-            animation: pulseH1 1.8s ease-in-out infinite;
-        }
-
-        @keyframes pulseH1 {
-            0% {
-                text-shadow: 0 0 5px #fad91f, 0 0 10px #fad91f, 0 0 15px #fad91f, 0 0 20px #CE5E00;
-                transform: scale(1);
-            }
-
-            50% {
-                text-shadow: 0 0 15px #ffd700, 0 0 25px #ffea00, 0 0 35px #ffdd00, 0 0 45px #ffcc00;
-                transform: scale(1.05);
-            }
-
-            100% {
-                text-shadow: 0 0 5px #fad91f, 0 0 10px #fad91f, 0 0 15px #fad91f, 0 0 20px #CE5E00;
-                transform: scale(1);
-            }
         }
 
         p {
@@ -241,6 +221,29 @@
             100% {
                 transform: translateY(-50%);
             }
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            /* centra horizontal */
+            align-items: center;
+            margin-bottom: 1rem;
+            /* espacio debajo del logo */
+        }
+
+        .logo {
+            max-width: 180px;
+            /* tamaño controlado y responsivo */
+            height: auto;
+            filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+            /* efecto sutil moderno */
+        }
+
+        .titulo-principal {
+            text-align: center;
+            font-size: 2rem;
+            margin: 0;
         }
 
         /* --- contenido central --- */
@@ -387,13 +390,14 @@
     </div>
     <main>
 
-        <h1>🎰 ¡PLATAFORMA NUMERO 1! 🎰</h1>
-        <p class="subtitulo">Pedi tu usuario en whatsapp ahora!</p>
-
+        <div class="logo-container">
+            <img src="src/logo_gana_en_casa.webp" alt="Gana en Casa Logo" class="logo">
+        </div>
+        <h1 class="titulo-principal">🎰🏠¡la plataforma numero 1!🏠🎰</h1>
         <!-- Primer CTA -->
         <a href="https://wa.me/5491171045562?text=Hola%20quiero%20el%20bono%20me%20harias%20un%20usuario?"
             class="btn-whatsapp" rel="noopener" onclick="return trackWhatsappAndOpen(this);">
-            Reclamar Bono en WhatsApp
+            Pedi tu usuario en WhatsApp
         </a>
         <p class="parrafo">🎰 +6000 SLOTS Y RULETAS EXCLUSIVAS🎰</p>
         <p class="parrafo">💸 RETIROS EN EL MOMENTO DE HASTA 3.000.000💸</p>
@@ -408,7 +412,7 @@
         <p class="subtexto">Oferta disponible por tiempo limitado ⏳</p>
         <a href="https://wa.me/5491171045562?text=Hola%20quiero%20el%20bono%20me%20harias%20un%20usuario?"
             class="btn-whatsapp" rel="noopener" onclick="return trackWhatsappAndOpen(this);">
-            Reclamar Bono en WhatsApp
+            Pedi tu usuario en WhatsApp
         </a>
     </main>
     <!-- Carrusel abajo en móvil -->
